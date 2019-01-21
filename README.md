@@ -1,5 +1,5 @@
-# APEX-Captcha
-This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet.
+
+This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet.</br>
 In this plugin you can use text instead of  image that is not recommended.
 Unfortunately this version doesn’t work in Oracle Database 12C that I hope this problem will be resolved in future versions.
 Before install this plugin do below steps:
