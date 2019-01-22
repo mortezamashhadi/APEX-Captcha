@@ -8,18 +8,59 @@ This plugin generate an image that display a math operation between two numbers 
 ![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif?token=AsPn-nbzlCps1FW_royfQYHx8SrfW6pfks5cRq_0wA%3D%3D)
 
 
+## How to install
+Before install this item plugin create below objects in your schema:
+#Create JAVA SOURCE#
 
-[https://apex.oracle.com/pls/apex/f?p=10:15](https://apex.oracle.com/pls/apex/f?p=10:15)
+```sql
+CREATE OR REPLACE AND COMPILE JAVA SOURCE NAMED captcha
+    AS import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.util.Random;
+import java.awt.*;
+public class CreateCaptcha {
+    public static String generateCaptcha(String text) {
+         Random rnd = new Random();
+        int width = 80;
+        int height = 30;
+        BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        Graphics2D g2D = img.createGraphics();
+        g2D.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+        g2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2D.setFont(new Font("Arial", Font.BOLD, 18));
+        g2D.setColor(Color.WHITE);
+        g2D.fillRect(0, 0, width, height);
+      for (int i=0; i<rnd.nextInt(2)+4;i++){
+               g2D.setColor( new Color(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255)));
+               g2D.drawLine(rnd.nextInt(10), rnd.nextInt(height), rnd.nextInt(width), rnd.nextInt(height));
+           }
+        g2D.setColor( new Color(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255)));
+        g2D.drawString(text, 10, 20);      
+        g2D.dispose();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try {
+            ImageIO.write(img, "png", baos);            
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+           String data = javax.xml.bind.DatatypeConverter.printBase64Binary( baos.toByteArray());
+          return "data:image/png;base64," + data;
+    }
+};
+```
+#Create Function #
+```sql
+CREATE OR REPLACE FUNCTION FN_GETBASE64 (str IN VARCHAR2)
+    RETURN VARCHAR2
+AS
+    LANGUAGE JAVA
+    NAME 'CreateCaptcha.generateCaptcha(java.lang.String) return java.lang.String' ;
+```
 
-[YouTube Video](https://youtu.be/cR)
+Download this repository and import the plug-in into your application from this location:
 
-## PRE-REQUISITES ##
+`plugin/item_type_plugin_ir_apex_captcha.sql`
 
-* [Oracle Application Express 5.1.1](https://apex.oracle.com)
-
-## INSTALLATION ##
-
-1. Download the **[latest release](https://github.com/mortezamashhadi/APEX-Captcha/releases/latest)**
-2. Import plugin **item_type.sql** to your Apex app
-3. Read this blog **[About Plug-in: APEX-Captcha](https://morteza.blogspot/08/apexcaptcha.html#more)**
-
+## Settings
+In this plugin you can use text instead of  image that is not recommended.
