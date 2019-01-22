@@ -2,7 +2,7 @@
 
 This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet .
 
-## Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plugin. ##
+# Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plugin. #
 
 ## DEMO ##
 
