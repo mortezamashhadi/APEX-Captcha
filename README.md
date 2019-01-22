@@ -62,5 +62,4 @@ Download this repository and import the plug-in into your application from this 
 
 `plugin/item_type_plugin_ir_apex_captcha.sql`
 
-## Settings
-In this plugin you can use text instead of  image that is not recommended.
+
