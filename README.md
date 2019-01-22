@@ -36,7 +36,8 @@ public class CreateCaptcha {
                g2D.setColor( new Color(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255)));
                g2D.drawLine(rnd.nextInt(10), rnd.nextInt(height), rnd.nextInt(width), rnd.nextInt(height));
            }
-        g2D.setColor( new Color(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255)));
+        Color[] c = {new Color(164, 66, 244),new Color(244, 65, 86),new Color(94, 65, 244),new Color(244, 121, 65)};
+        g2D.setColor(c[rnd.nextInt(c.length-1)]); 
         g2D.drawString(text, 10, 20);      
         g2D.dispose();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
