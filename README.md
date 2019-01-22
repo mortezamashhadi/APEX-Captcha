@@ -1,8 +1,8 @@
-# APEX Captcha
+#orclapex Captcha
 
-This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet .
+This item plug-in generate an image that display a math operation between two numbers using Java  code so the advantage of this plug-in is that you don’t need any web service or Internet .
  <br />
-Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plugin.
+Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plug-in.
 
 ## DEMO ##
 
@@ -10,7 +10,7 @@ Unfortunately this version doesn’t work in Oracle Database 12C that I hope tha
 
 
 ## How to install
-Before install this item plugin create below objects in your schema:
+Before install this plug-in create below objects in your schema:
 ## Create JAVA SOURCE ##
 
 ```sql
