@@ -10,7 +10,7 @@ This plugin generate an image that display a math operation between two numbers 
 
 ## How to install
 Before install this item plugin create below objects in your schema:
-#Create JAVA SOURCE#
+## Create JAVA SOURCE ##
 
 ```sql
 CREATE OR REPLACE AND COMPILE JAVA SOURCE NAMED captcha
@@ -49,7 +49,7 @@ public class CreateCaptcha {
     }
 };
 ```
-#Create Function #
+## Create Function ##
 ```sql
 CREATE OR REPLACE FUNCTION FN_GETBASE64 (str IN VARCHAR2)
     RETURN VARCHAR2
