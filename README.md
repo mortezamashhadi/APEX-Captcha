@@ -3,11 +3,11 @@
 This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet .
 
 
-APEX Captcha.
-
-![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.jpg)
-
 ## DEMO ##
+
+![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif?token=AsPn-nbzlCps1FW_royfQYHx8SrfW6pfks5cRq_0wA%3D%3D)
+
+
 
 [https://apex.oracle.com/pls/apex/f?p=10:15](https://apex.oracle.com/pls/apex/f?p=10:15)
 
