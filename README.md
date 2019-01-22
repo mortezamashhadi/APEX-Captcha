@@ -5,7 +5,7 @@ This plugin generate an image that display a math operation between two numbers 
 
 ## DEMO ##
 
-![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif?token=AsPn-nbzlCps1FW_royfQYHx8SrfW6pfks5cRq_0wA%3D%3D)
+![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif?token=AsPn-khZTzUIy6YaiTdtV8lHCptSzV11ks5cRrOBwA%3D%3D)
 
 
 ## How to install
