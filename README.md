@@ -1,11 +1,11 @@
 # APEX Captcha
 
 This plugin generate an image that display a math operation between two numbers using Java  code so the advantage of this plugin is that you don’t need any web service or Internet .
-
+Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plugin.
 
 ## DEMO ##
 
-![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif?token=AsPn-khZTzUIy6YaiTdtV8lHCptSzV11ks5cRrOBwA%3D%3D)
+![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif)
 
 
 ## How to install
