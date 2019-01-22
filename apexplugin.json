@@ -1,0 +1,34 @@
+{
+  "name" : "APEX Captcha",
+  "version" : "1.0",
+  "description" : "This plug-in generate an image that display a math operation between two numbers using Java  code so the advantage of this plug-in is that you don’t need any web service or Internet.",
+  "keywords" : ["APEX Captcha","Math Captcha"],
+  "homepage" : "https://github.com/mortezamashhadi/APEX-Captcha",
+  "bugs" : {
+    "url" : "https://github.com/mortezamashhadi/APEX-Captcha/issues",
+    "email" : "morteza.mashhadi@gmail.com"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Morteza Mashhadi",
+    "email" : "morteza.mashhadi@gmail.com",
+    "url" : "http://mortezamashhadi.blogspot.com/",
+    "twitter" : "@morteza_m2"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mortezamashhadi/APEX-Captcha.git"
+  },
+ "oracle" : {
+    "versions" : ["11.2.0.1"],
+    "apex" : {
+      "versions" : ["18.2.0", "18.1.0", "5.1.1", "5.1.2", "5.1.3", "5.1.4"],
+      "plugin" : {
+        "internalName" : "IR_APEX_CAPTCHA",
+        "type" : "item",
+        "demo" : "",
+        "previewImage" : "https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif"
+      }
+    }
+  }
+}
