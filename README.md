@@ -5,7 +5,6 @@ This item plug-in generate an image that display a math operation between two nu
 Unfortunately this version doesn’t work in Oracle Database 12C that I hope that problem will be resolved in future versions of this plug-in.
 
 ## DEMO ##
-As I mentioned this plug-in use java code to generate image and because Java Development is  Disabled in apex.oracle.com, I could not create demo for this plug-in.
 ![](https://raw.githubusercontent.com/mortezamashhadi/APEX-Captcha/master/preview.gif)
 
 
